@@ -1,0 +1,17 @@
+{
+	"name": "git-fame-coefficient",
+	"version": "0.0.1",
+	"main": "index.js",
+	"repository": "https://github.com/movahhedi/git-fame-coefficient",
+	"author": "Shahab Movahhedi <45717968+movahhedi@users.noreply.github.com>",
+	"license": "MIT",
+	"private": false,
+	"bin": {
+		"git-fame-coefficient": "./index.js",
+		"gfc": "./index.js"
+	},
+	"type": "module",
+	"dependencies": {
+		"prompt": "^1.3.0"
+	}
+}
