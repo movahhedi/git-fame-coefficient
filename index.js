@@ -3,6 +3,8 @@
 import { execSync } from "child_process";
 import prompt from "prompt";
 
+console.log("Starting git-fame-coefficient...");
+
 let Total_X = 0,
 	Total_LOC = 0,
 	Result = [],
@@ -25,6 +27,7 @@ let Total_X = 0,
 	];
 
 queries.forEach((query) => {
+	console.log("Running: " + query.command);
 	Total_X += query.x;
 	let stdout = execSync(query.command);
 	let data = JSON.parse(stdout.toString());
